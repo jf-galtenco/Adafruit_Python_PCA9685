@@ -10,7 +10,7 @@ import Adafruit_PCA9685
 from random import randint
 from sys import exit
 
-
+###COUCOU ESSAIS GITHUB
 # Uncomment to enable debug output.
 #import logging
 #logging.basicConfig(level=logging.DEBUG)
@@ -24,9 +24,9 @@ pwm = Adafruit_PCA9685.PCA9685()
 # Configure min and max servo pulse lengths
 # servo_min = 150  # Min pulse length out of 4096
 # servo_max = 600  # Max pulse length out of 4096
-df1=1000###doit etre un entier compris entre 0 et 4095 
+df1=4000###doit etre un entier compris entre 0 et 4095 
 df2=3000
-freq=100 #Hz
+freq=200 #Hz
 # Helper function to make setting a servo pulse width simpler.
 def set_servo_pulse(channel, pulse):
     pulse_length = 1000000    # 1,000,000 us per second
@@ -61,12 +61,12 @@ for i in chanList:
 # pwm.set_pwm(0, 0, df1)
 # pwm.set_pwm(1, 0, df2)
 print('ca tourne')
-time.sleep(500)
+time.sleep(600)
 # for i in range(10):
 
 for i in chanList:
     pwm.set_pwm(i-1, 0, 0)
-
+print('FINI')
 # print('Moving servo on channel 0, press Ctrl-C to quit...')
 # while True:
 #     # Move servo on channel O between extremes.
