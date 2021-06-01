@@ -1,0 +1,1 @@
+ sudo dfu-util --alt 0 -D pybv11-20210510-unstable-v1.15-94-g0e87459e2.dfu
